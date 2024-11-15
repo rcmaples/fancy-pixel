@@ -2,6 +2,8 @@
 
 > This is a **Sanity Studio v3** plugin.
 
+![](assets/fancy-pixel.gif)
+
 ## Installation
 
 ```sh
@@ -14,11 +16,14 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import {defineConfig} from 'sanity'
-import {myPlugin} from 'sanity-plugin-fancy-pixel'
+import {fancyPixelPlugin} from "sanity-plugin-fancy-pixel";
 
 export default defineConfig({
   //...
-  plugins: [myPlugin({})],
+  plugins: [
+    // ...,
+    fancyPixelPlugin()
+  ],
 })
 ```
 
