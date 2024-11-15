@@ -1,6 +1,6 @@
-import './styles.css'
-
 import {useState} from 'react'
+
+import NyanCatStyles from './styles'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const NyanCat = () => {
@@ -14,6 +14,7 @@ const NyanCat = () => {
 
   return (
     <>
+      <NyanCatStyles />
       <div id="nyanCatOverly" className={`overlay cat-${positions[currentIndex]}`}>
         <div className="rainbow">
           <div className="sprite" />
